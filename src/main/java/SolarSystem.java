@@ -2,9 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-import processing.core.*;
-//import processing.opengl.*;
+import processing.core.PApplet;
+import processing.core.PFont;
 
 /**
  *
@@ -30,8 +29,9 @@ public class SolarSystem extends PApplet {
 
     @Override
     public void setup() {
-
-        size(screenWidth, screenHeight - 10, P3D);
+// changing so this compiles...
+//        size(screenWidth, screenHeight - 10, P3D);
+        size(1024, 768 - 10, P3D);
         x = new float[numOfPlanets];
         y = new float[numOfPlanets];
         z = new float[numOfPlanets];
@@ -154,9 +154,9 @@ public class SolarSystem extends PApplet {
         strokeWeight(5);
         stroke(50, 50, 50);
         //bottom
-         //      quad(0, height, (width/2)-250, (height/2)+150, (width/2)+250, (height/2)+150, width, height);
+        //      quad(0, height, (width/2)-250, (height/2)+150, (width/2)+250, (height/2)+150, width, height);
         //left
-         //      quad(0, 0, (width/2)-250, (height/2)-214, (width/2)-250, (height/2)+150, 0, height);
+        //      quad(0, 0, (width/2)-250, (height/2)-214, (width/2)-250, (height/2)+150, 0, height);
         //right
         translate(width / 2, height / 2);
         noFill();
@@ -316,6 +316,6 @@ public class SolarSystem extends PApplet {
     }
 
     public static void main(String _args[]) {
-        PApplet.main(new String[]{SolarSystem.class.getName()});
+        PApplet.main(new String[] {SolarSystem.class.getName()});
     }
 }
