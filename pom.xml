@@ -12,6 +12,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <org.jogamp.jogl_version>2.2.1</org.jogamp.jogl_version>
+
+        <com.vijaykiran.processing_version>2.0b8</com.vijaykiran.processing_version>
+
         <org.apache.maven.plugins_maven-compiler-plugin_version>2.4</org.apache.maven.plugins_maven-compiler-plugin_version>
 
         <org.apache.maven.plugins_maven-compiler-plugin_source_version>1.7</org.apache.maven.plugins_maven-compiler-plugin_source_version>
@@ -49,37 +53,31 @@
         <dependency>
             <groupId>com.vijaykiran.processing</groupId>
             <artifactId>org.processing.core</artifactId>
-            <version>2.0b8</version>
-        </dependency>
-
-        <dependency>
-            <groupId>opengl</groupId>
-            <artifactId>jogl.all</artifactId>
-            <version>2.0-rc3</version>
+            <version>${com.vijaykiran.processing_version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all</artifactId>
-            <version>2.0-rc11</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jogamp.gluegen</groupId>
-            <artifactId>gluegen-rt-main</artifactId>
-            <version>2.0-rc11</version>
+            <version>${org.jogamp.jogl_version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.jogamp.gluegen</groupId>
             <artifactId>gluegen-rt</artifactId>
-            <version>2.0.2</version>
+            <version>${org.jogamp.jogl_version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>nativewindow</artifactId>
-            <version>2.2.1</version>
+            <version>${org.jogamp.jogl_version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jogamp.jogl</groupId>
+            <artifactId>nativewindow-main</artifactId>
+            <version>${org.jogamp.jogl_version}</version>
         </dependency>
     </dependencies>
 
